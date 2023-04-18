@@ -1,0 +1,83 @@
+*::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+.cajamin{
+    border: 1px solid black;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+}
+
+.cajamax{
+    border: 1px solid black;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: blue;
+}
+
+@media(min-width: 320px){
+    .cajamin{
+        background-color: crimson;
+    }
+}
+@media(min-width:500px) {
+    .cajamin{
+        background-color: chartreuse;
+    }
+}
+@media (min-width:900px) {
+    .cajamin{
+        background-color: deeppink;
+    }
+}
+@media (min-width:1200px) {
+    .cajamin{
+        background-color: salmon;
+    }
+}
+
+@media (max-width:1200px) {
+    .cajamax{
+        background-color: gold;
+
+    }
+    
+}
+
+@media (max-width:900px) {
+    .cajamax{
+        background-color: darkred;
+    }
+    
+}
+@media (max-width:500px) {
+    .cajamax{
+        background-color: rgb(146, 221, 146);
+    }
+    
+
+@media (max-width:320px) {
+    .cajamax{
+        background-color:rgba(0, 191, 255, 0.889);
+    }
+}
